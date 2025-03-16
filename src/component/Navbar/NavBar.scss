@@ -1,0 +1,81 @@
+@use "../../App.scss";
+
+header {
+  height: 6rem;
+  width: 100%;
+  padding: 10px 20px 20px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  ul {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    border-radius: 200px;
+  }
+
+  .NavOptions {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    gap: 4rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .NavOptions li {
+    position: relative;
+  }
+
+  .NavOptions li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
+    color: inherit;
+  }
+
+  .NavOptions a:hover {
+    color: var(--hover-color-2);
+    text-shadow: 10px 10px 10px #ff007f, 0 0 20px #00ffff, 1px 1px 30px #8f00ff;
+  }
+
+  .NavOptions li a::after {
+    content: "";
+    height: 4px;
+    width: 0;
+    border-radius: 200px;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--hover-color);
+    transition: width 300ms ease-in-out;
+  }
+
+  .NavOptions li a:hover::after {
+    width: 100%;
+  }
+
+  img {
+    height: 5rem;
+    width: auto;
+  }
+}

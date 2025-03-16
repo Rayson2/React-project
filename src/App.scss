@@ -1,0 +1,25 @@
+:root {
+  --hover-color: #ef749b;
+  --hover-color-2: #ebeaec;
+  --hover-color-3: linear-gradient(135deg, #ff007f, #8f00ff, #00ffff);
+  --footer-color: #1c032a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0228, #4a1850, #311a27);
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif; // Use a better default font
+  overflow-x: hidden; // Prevents unwanted horizontal scrolling
+}
