@@ -13,13 +13,11 @@
 
 body {
   background: linear-gradient(135deg, #1a0228, #4a1850, #311a27);
-  min-height: 100vh;
+  min-height: 100vh; /* Change from height to min-height */
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: "Arial", sans-serif; // Use a better default font
-  overflow-x: hidden; // Prevents unwanted horizontal scrolling
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
 }

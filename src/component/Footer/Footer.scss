@@ -1,11 +1,10 @@
 @use "../../App.scss";
 
 footer {
-  min-height: 60%;
   width: 100%;
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

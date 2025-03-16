@@ -1,0 +1,97 @@
+@use "../../App.scss";
+
+section {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; /* Prevents unwanted scrolling */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  ul {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .Content_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vw;
+    max-width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Color_text {
+    background: linear-gradient(to right, #ff6a9f, #8a2be2);
+    color: transparent;
+    -webkit-background-clip: text; /* For Webkit browsers */
+    -webkit-mask-image: linear-gradient(to right, #ff6a9f, #8a2be2);
+    mask-image: linear-gradient(
+      to right,
+      #ff6a9f,
+      #8a2be2
+    ); /* Standard property */
+    font-weight: bold;
+  }
+
+  .Image_container {
+    height: 25rem;
+    width: 30rem;
+  }
+
+  img {
+    margin: 20px 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 20px #ff007f, 0 0 20px #00ffff, 0 0 30px #8f00ff;
+  }
+
+  .text_Container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_Container_main h5 {
+    font-size: 46px;
+    text-align: left;
+  }
+  .text_Container_main p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  button {
+    padding: 0.3rem;
+    width: 50%;
+    height: 2rem;
+    background: var(--hover-color-3);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    box-shadow: 0 0 10px #ff007f, 0 0 10px #00ffff;
+    transform: scale(1.05);
+  }
+}

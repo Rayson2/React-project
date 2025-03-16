@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./App.scss";
 import NavBar from "./component/Navbar/NavBar";
 import Footer from "./component/Footer/Footer";
+import Home from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <NavBar />
+      <Home />
       <Footer />
     </>
   );
