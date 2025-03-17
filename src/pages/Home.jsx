@@ -20,7 +20,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section>
+    <section className="Home_section">
       <div className="Content_container">
         <div className="text_Container_main">
           <h5>
