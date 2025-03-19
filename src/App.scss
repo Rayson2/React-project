@@ -1,4 +1,7 @@
 :root {
+  --purple-color: #4a1850;
+  --dark-purple-color: #1a0228;
+  --dark-blue-color: #050610;
   --hover-color: #ef749b;
   --hover-color-2: #ebeaec;
   --hover-color-3: linear-gradient(135deg, #ff007f, #8f00ff, #00ffff);
@@ -12,7 +15,14 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1a0228, #4a1850, #311a27);
+  background: linear-gradient(
+    10deg,
+    var(--dark-blue-color),
+    var(--dark-purple-color),
+    var(--dark-blue-color),
+    var(--purple-color),
+    var(--dark-blue-color)
+  );
   min-height: 100vh; /* Change from height to min-height */
   width: 100vw;
   display: flex;

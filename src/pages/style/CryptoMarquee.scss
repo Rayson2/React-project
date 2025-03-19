@@ -11,16 +11,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
-    border-top: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+    border-top: 2px #acacac solid;
+    border-bottom: 2px #acacac solid;
     display: flex;
     align-items: center;
-  }
-
-  span{
-    height: 10vh;
-    width: 20px;
-    background: red;
   }
 
   ul {
@@ -31,12 +25,13 @@
   }
 
   .Crytpo_icon {
-    color: #fff;
+    color: #d1d1d1;
     font-size: 56px;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.5);
+      color: #fff;
     }
   }
 }

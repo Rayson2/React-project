@@ -4,6 +4,8 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  margin: 0 0 0 7rem ;
+  padding: 0 15rem;
   overflow: hidden; 
 
   h1,
@@ -64,16 +66,17 @@
   .text_Container_main {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .text_Container_main h5 {
-    font-size: 46px;
+    font-size: 2.875rem;
     text-align: left;
   }
   .text_Container_main p {
     font-size: 18px;
+    line-height: 150%;
     text-align: left;
   }
 

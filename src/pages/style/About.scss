@@ -1,0 +1,148 @@
+$size: 25rem; //For Half-circle
+@use "../../App.scss";
+
+.About_Section {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  margin: 7rem 0;
+  padding: 0 15rem;
+  overflow:visible;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  ul {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .About_Heading_Container {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 200px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .About_Heading_Container h2 {
+    font-size: 1.49rem;
+    font-weight: 500;
+    color: #d1d1d1;
+    z-index: 2;
+  }
+
+  .About_Heading_Container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    background: var(--hover-color-3);
+    animation: rotate 4s linear infinite;
+  }
+
+  .About_Heading_Container::after {
+    content: "";
+    position: absolute;
+    background: var(--dark-purple-color);
+    inset: 3px;
+    border-radius: 190px;
+  }
+
+  .About_Sub_Heading_container {
+    font-size: 2.76rem;
+    font-weight: 600;
+    width: 59%;
+    margin: 3rem 0 3rem;
+  }
+
+  .Color_text {
+    background: linear-gradient(to right, #ff6a9f, #8a2be2);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-mask-image: linear-gradient(to right, #ff6a9f, #8a2be2);
+    font-weight: bold;
+  }
+
+  .About_Content_Container {
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    min-height: fit-content;
+  }
+
+  .Half_Circle {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 0.5%;
+    transform: translate(-50%, -50%);
+    height: $size;
+    width: calc($size/2);
+    border-bottom-right-radius: $size * 2;
+    border-top-right-radius: $size * 2;
+    background-color: var(--purple-color);
+  }
+
+  .Image_Container {
+    height: 25rem;
+    height: 25rem;
+    border-radius: 20rem;
+  }
+
+  .Image_Container img {
+    height: 25rem;
+    height: 25rem;
+    border-radius: 20rem;
+    box-shadow: 0 0 20px #ff007f, 0 0 20px #00ffff, 0 0 30px #8f00ff;
+  }
+
+  .Content_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    line-height: 150%;
+  }
+
+  button {
+    font-size: 1.09rem;
+    padding: 0.3rem;
+    width: 20%;
+    height: 3rem;
+    background: var(--hover-color-3);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    box-shadow: 0 0 10px #ff007f, 0 0 10px #00ffff;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
